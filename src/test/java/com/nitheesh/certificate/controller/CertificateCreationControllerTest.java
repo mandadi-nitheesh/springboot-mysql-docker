@@ -11,6 +11,7 @@ import java.security.cert.CertificateException;
 import org.bouncycastle.operator.OperatorCreationException;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,7 +35,7 @@ import com.nitheesh.certificate.service.CetificateService;
 
 
 
-@SpringBootTest(classes = CetificateManagementApplication.class)
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @ContextConfiguration
 class CertificateCreationControllerTest {
 	

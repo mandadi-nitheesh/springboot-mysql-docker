@@ -12,7 +12,7 @@ import org.springframework.test.context.ContextConfiguration;
 
 import com.nitheesh.certificate.CetificateManagementApplication;
 
-@SpringBootTest(classes = CetificateManagementApplication.class)
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @ContextConfiguration
 class EmailServiceTest {
 	

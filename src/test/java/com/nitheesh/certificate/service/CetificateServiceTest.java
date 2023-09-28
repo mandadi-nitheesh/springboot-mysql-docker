@@ -19,7 +19,7 @@ import com.nitheesh.certificate.CetificateManagementApplication;
 import com.nitheesh.certificate.Payload.CertificateDetails;
 import com.nitheesh.certificate.Payload.CertificateResponse;
 
-@SpringBootTest(classes = CetificateManagementApplication.class)
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @ContextConfiguration
 class CetificateServiceTest {
 	
