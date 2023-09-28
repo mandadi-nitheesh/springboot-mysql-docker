@@ -24,12 +24,14 @@ import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.ContextConfiguration;
 
 import com.nitheesh.certificate.Payload.CertificateResponse;
 import com.nitheesh.certificate.entity.CertificateData;
 import com.nitheesh.certificate.repository.CertificateRepo;
 
 @SpringBootTest
+@ContextConfiguration
 public class CertificateDaoServiceTest {
 	
 	
