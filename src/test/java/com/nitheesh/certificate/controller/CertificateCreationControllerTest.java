@@ -35,8 +35,7 @@ import com.nitheesh.certificate.service.CetificateService;
 
 
 
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-@ContextConfiguration
+@SpringBootTest
 class CertificateCreationControllerTest {
 	
 	

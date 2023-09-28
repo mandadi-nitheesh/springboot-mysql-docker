@@ -15,8 +15,7 @@ import org.springframework.test.context.ContextConfiguration;
 
 import com.nitheesh.certificate.CetificateManagementApplication;
 
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-@ContextConfiguration
+@SpringBootTest
 class CertificateMonitoringServiceImplTest {
 	
 	

@@ -12,8 +12,7 @@ import org.springframework.test.context.ContextConfiguration;
 import com.nitheesh.certificate.CetificateManagementApplication;
 import com.nitheesh.certificate.repository.CustomUserRepo;
 
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-@ContextConfiguration
+@SpringBootTest
 class CustomUserServiceTest {
 
 	@MockBean

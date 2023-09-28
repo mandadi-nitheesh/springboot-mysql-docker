@@ -30,8 +30,7 @@ import com.nitheesh.certificate.Payload.CertificateResponse;
 import com.nitheesh.certificate.entity.CertificateData;
 import com.nitheesh.certificate.repository.CertificateRepo;
 
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-@ContextConfiguration
+@SpringBootTest
 public class CertificateDaoServiceTest {
 	
 	
