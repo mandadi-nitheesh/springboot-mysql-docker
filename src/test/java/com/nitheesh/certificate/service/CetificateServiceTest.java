@@ -15,10 +15,11 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.ContextConfiguration;
 
+import com.nitheesh.certificate.CetificateManagementApplication;
 import com.nitheesh.certificate.Payload.CertificateDetails;
 import com.nitheesh.certificate.Payload.CertificateResponse;
 
-@SpringBootTest
+@SpringBootTest(classes = CetificateManagementApplication.class)
 @ContextConfiguration
 class CetificateServiceTest {
 	

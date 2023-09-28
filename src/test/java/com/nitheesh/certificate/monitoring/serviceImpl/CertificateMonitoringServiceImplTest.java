@@ -1,9 +1,8 @@
 package com.nitheesh.certificate.monitoring.serviceImpl;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.security.cert.CertificateException;
 import java.security.cert.CertificateFactory;
@@ -14,7 +13,9 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ContextConfiguration;
 
-@SpringBootTest
+import com.nitheesh.certificate.CetificateManagementApplication;
+
+@SpringBootTest(classes = CetificateManagementApplication.class)
 @ContextConfiguration
 class CertificateMonitoringServiceImplTest {
 	

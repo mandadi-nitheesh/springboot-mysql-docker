@@ -1,6 +1,6 @@
 package com.nitheesh.certificate.Jwt;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.when;
 
 import org.junit.jupiter.api.Test;
@@ -9,9 +9,10 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.ContextConfiguration;
 
+import com.nitheesh.certificate.CetificateManagementApplication;
 import com.nitheesh.certificate.repository.CustomUserRepo;
 
-@SpringBootTest
+@SpringBootTest(classes = CetificateManagementApplication.class)
 @ContextConfiguration
 class CustomUserServiceTest {
 

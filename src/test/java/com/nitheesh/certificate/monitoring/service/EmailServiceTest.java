@@ -1,10 +1,6 @@
 package com.nitheesh.certificate.monitoring.service;
 
 import static org.mockito.Mockito.doNothing;
-import static org.mockito.Mockito.doThrow;
-import static org.mockito.Mockito.times;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
 
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
@@ -14,7 +10,9 @@ import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.test.context.ContextConfiguration;
 
-@SpringBootTest
+import com.nitheesh.certificate.CetificateManagementApplication;
+
+@SpringBootTest(classes = CetificateManagementApplication.class)
 @ContextConfiguration
 class EmailServiceTest {
 	

@@ -27,13 +27,14 @@ import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.RequestBuilder;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
+import com.nitheesh.certificate.CetificateManagementApplication;
 import com.nitheesh.certificate.Payload.CertificateDetails;
 import com.nitheesh.certificate.Payload.CertificateResponse;
 import com.nitheesh.certificate.service.CetificateService;
 
 
 
-@SpringBootTest
+@SpringBootTest(classes = CetificateManagementApplication.class)
 @ContextConfiguration
 class CertificateCreationControllerTest {
 	
